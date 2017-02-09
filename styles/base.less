@@ -368,14 +368,12 @@ atom-text-editor .gutter .line-number.cursor-line {
 }
 
 .syntax--storage.syntax--type.syntax--function.syntax--js {
-  color: #ef50ff;
-  color: #b738c3;
-    /* text-shadow: 3px 3px 0px #25dab5; */
-    box-shadow: 0 0 10px black inset;
+    color: #b738c3;
+    /*box-shadow: 0 0 10px black inset;
     box-sizing: content-box;
     padding: 2px;
     border-radius: 4px;
-    border-bottom: 1px solid rgb(224, 165, 31);
+    border-bottom: 1px solid rgb(224, 165, 31);*/
 }
 
 .syntax--entity.syntax--name.syntax--function {
@@ -383,4 +381,33 @@ atom-text-editor .gutter .line-number.cursor-line {
 }
 .syntax--keyword.syntax--control.syntax--js {
   color: #17ff00;
+}
+
+.syntax--string.syntax--quoted.syntax--double.syntax--html {
+  color: #d3de64;
+}
+
+.syntax--entity.syntax--name.syntax--tag.syntax--inline.syntax--any.syntax--html , .syntax--meta.syntax--tag.syntax--block.syntax--any.syntax--html, .syntax--punctuation.syntax--definition.syntax--tag.syntax--begin.syntax--html, .syntax--entity.syntax--name.syntax--tag.syntax--block.syntax--any.syntax--html{
+  color: rgb(255, 92, 92);
+  text-decoration: none;
+}
+
+.syntax--constant.syntax--numeric {
+  color: rgb(179, 210, 73) !important;
+}
+
+.syntax--constant {
+    color: rgb(26, 136, 35);
+}
+
+.syntax--keyword.syntax--other.syntax--unit.syntax--css {
+  color: rgb(72, 173, 88);
+}
+.syntax--entity.syntax--name.syntax--tag {
+  text-decoration: none;
+}
+
+atom-text-editor .cursor {
+  border-left: 2px solid rgb(255, 255, 255);
+
 }
